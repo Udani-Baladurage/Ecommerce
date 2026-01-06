@@ -1,0 +1,100 @@
+/* General page setup to match admin_users.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+/* Updated container to match the padding of the Users page */
+.admin-container {
+    padding: 20px 40px; /* Exact spacing from admin_users.css */
+    max-width: 100%;    /* Allows it to be responsive but kept in check by padding */
+    box-sizing: border-box;
+}
+
+/* Page title */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif; /* Removed Merriweather for consistency */
+}
+
+/* --- Table Styling (Simplified to match Users) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: none; /* Removed heavy shadow to match admin_users.css */
+}
+
+/* Table header - Matches the dark style of the Users page */
+th {
+    background-color: #222020;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    text-transform: none; /* Removed uppercase for consistency */
+}
+
+/* Table cells */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left; /* Changed from center to left to match Users table */
+}
+
+/* Alternate row color and hover from admin_users.css */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef3f7;
+}
+
+/* --- Form Layout (Kept but styled cleaner) --- */
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Form button - Changed from pink to the red/darker style if desired, 
+   or kept simple to match the clean UI */
+form button {
+    background: #f858d2; /* Darker button to match header */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    grid-column: span 2;
+}
+
+/* --- Action Links (Edit/Delete) --- */
+.btn-edit, .btn-delete {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-edit {
+    color: #1e88e5;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}

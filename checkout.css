@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.checkout-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ---------- LEFT (FORM) ---------- */
+.checkout-left {
+    width: 60%;
+    padding: 30px;
+}
+
+.checkout-left h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.checkout-left input,
+.checkout-left textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkout-left textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* ---------- RIGHT (SUMMARY) ---------- */
+.checkout-right {
+    width: 40%;
+    background: #fafafa;
+    padding: 30px;
+    border-left: 1px solid #eee;
+}
+
+/* Updated to match your JS class name 'summary-item' */
+.summary-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* This forces the large image into a small, standard thumbnail size */
+.summary-img {
+    width: 70px;  /* Fixed width */
+    height: 90px; /* Fixed height */
+    object-fit: cover; /* Prevents stretching */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-shrink: 0; /* Prevents the image from getting squashed */
+}
+
+.summary-details {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.summary-details p {
+    margin: 2px 0;
+}
+
+.total-box {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.total-box p {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+
+
+/* ---------- BUTTON ---------- */
+.place-order-btn {
+    width: 100%;
+    padding: 15px;
+    background: #e71d82;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.place-order-btn:hover {
+    background: #e94494;
+}
+
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        flex-direction: column;
+    }
+    .checkout-left,
+    .checkout-right {
+        width: 100%;
+    }
+}

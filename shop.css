@@ -1,0 +1,38 @@
+/* SHOP LIST MENU */
+.shop-hover {
+  position: relative;
+}
+
+/* Hidden list */
+.shop-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f7f5f2;
+  padding: 20px 30px;
+  min-width: 220px;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  z-index: 999;
+}
+
+/* Show on hover */
+.shop-hover:hover .shop-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* List links */
+.shop-list a {
+  text-decoration: none;
+padding: 6px 0;
+}
+
+.shop-list a:hover {
+  color: #f060a8;
+}
+.shop-hover .shop-list a {
+    color: rgb(102, 96, 96);  
+     font-size: 10px;
+}
+

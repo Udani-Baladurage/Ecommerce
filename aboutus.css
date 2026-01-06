@@ -1,0 +1,35 @@
+/*about us page styles*/
+/* =====================
+   ABOUT US SECTION
+===================== */
+.about-us {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 20px;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align:center;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #e24792;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #6c6a6a;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text.highlight {
+    font-weight: 600;
+    color: #454141;
+    margin-top: 30px;
+}

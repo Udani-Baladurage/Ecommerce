@@ -1,0 +1,77 @@
+/* General page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+.admin-content-wrapper {
+    padding: 20px 40px;
+}
+
+/* Page title */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+/* Table header */
+th {
+    background-color: #222020;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Table cells */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #eef3f7;
+}
+
+/* Links (Block / Unblock) */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Status colors */
+td:nth-child(5) {
+    font-weight: bold;
+}
+
+td:nth-child(5):contains("active") {
+    color: green;
+}
+
+td:nth-child(5):contains("blocked") {
+    color: rgb(219, 77, 77);
+}
+
+/* Action links */
+a[href*="toggle_id"] {
+    padding:  5px 10px;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+a[href*="toggle_id"]:hover {
+    opacity: 0.85;
+}
