@@ -342,6 +342,9 @@
     </div>
 
  <?php
+    
+    
+    
     // index.phpinclude 'footer.php';
     include 'footer.php';
     ?>
